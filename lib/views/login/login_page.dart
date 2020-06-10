@@ -23,8 +23,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   // 当前选中语言
   String _language = '';
-
-  @override
+  
   void initState() {
     super.initState();
     // 缓存中获取 language

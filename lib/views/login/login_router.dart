@@ -8,6 +8,7 @@ import 'phone_login/phone_login_page.dart';
 import 'register/register_page.dart';
 import 'zone_code_picker/zone_code_picker_page.dart';
 import 'login_page.dart';
+import 'password_change/password_page.dart';
 
 class LoginRouter implements IRouterProvider {
   /// 登陆root页
@@ -31,10 +32,16 @@ class LoginRouter implements IRouterProvider {
   /// 全球地区手机编码选择器
   static String zoneCodePickerPage = "/login/zone-code-picker";
 
+  ///密码更改界面
+  static String passwordChangePage = "/login/password-change";
+
   @override
   void initRouter(Router router) {
     router.define(loginPage,
         handler: Handler(handlerFunc: (_, params) => LoginPage()));
+    router.define(passwordChangePage,
+        handler:Handler(handlerFunc: (_, params) => PasswordPage()));
+
     router.define(registerPage,
         handler: Handler(handlerFunc: (_, params) => RegisterPage()));
     router.define(otherLoginPage,

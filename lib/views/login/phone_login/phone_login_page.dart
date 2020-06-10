@@ -1,6 +1,9 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_wechat/constant/constant.dart';
+import 'package:flutter_wechat/routers/fluro_navigator.dart';
+import 'package:flutter_wechat/views/login/login_router.dart';
 
 import 'package:flutter_wechat/widgets/login/phone_login_widget.dart';
 

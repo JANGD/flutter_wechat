@@ -1,9 +1,12 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_wechat/constant/constant.dart';
 
 import 'package:flutter_wechat/components/action_sheet/action_sheet.dart';
+import 'package:flutter_wechat/routers/fluro_navigator.dart';
+import 'package:flutter_wechat/views/login/login_router.dart';
 
 import 'package:flutter_wechat/widgets/login/other_login_widget.dart';
 
@@ -32,11 +35,14 @@ class _OtherLoginPageState extends State<OtherLoginPage> {
   void _bottomItemAction(int idx) {
     // idx 0: 找回密码 1: 更多选项
     if (idx == 0) {
+      _toPassword();
     } else {
       _showActionSheet(context);
     }
   }
-
+  void _toPassword(){
+    NavigatorUtils.push(context, LoginRouter.passwordChangePage, transition: TransitionType.nativeModal);
+  }
   /// -------------------- UI --------------------
   // 构建整体部件
   Widget _buildChidWidgets() {
