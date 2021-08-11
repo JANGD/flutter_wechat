@@ -82,7 +82,7 @@ class ProfileRouter implements IRouterProvider {
 
   /// 重写
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     // 我root页
     router.define(
       profilePage,

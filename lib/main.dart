@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   final Widget home;
 
   MyApp({this.home}) {
-    final router = Router();
+    final router = FluroRouter();
     Routers.configureRoutes(router);
     Application.router = router;
   }
@@ -74,7 +74,7 @@ class RestartWidget extends StatefulWidget {
 
   static restartApp(BuildContext context) {
     final _RestartWidgetState state =
-        context.ancestorStateOfType(const TypeMatcher<_RestartWidgetState>());
+        context.findAncestorStateOfType<_RestartWidgetState>();
     state.restartApp();
   }
 

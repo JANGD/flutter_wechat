@@ -12,7 +12,7 @@ class DiscoverRouter implements IRouterProvider {
   static String momentsPage = "/discover/moments";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(discoverPage,
         handler: Handler(handlerFunc: (_, params) => DiscoverPage()));
     router.define(momentsPage,

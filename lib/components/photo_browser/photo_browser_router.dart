@@ -12,7 +12,7 @@ class PhotoBrowserRouter implements IRouterProvider {
   static String photoBrowserPage = "/photo-browser";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(
       photoBrowserPage,
       handler: Handler(handlerFunc: (_, params) {

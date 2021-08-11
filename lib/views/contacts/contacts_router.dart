@@ -28,7 +28,7 @@ class ContactsRouter implements IRouterProvider {
   static String friendPermissionPage = "/contacts/friend_permission";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(contactsPage,
         handler: Handler(handlerFunc: (_, params) => ContactsPage()));
     router.define(addFriendPage,

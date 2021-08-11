@@ -36,11 +36,11 @@ class LoginRouter implements IRouterProvider {
   static String passwordChangePage = "/login/password-change";
 
   @override
-  void initRouter(Router router) {
+  void initRouter(FluroRouter router) {
     router.define(loginPage,
         handler: Handler(handlerFunc: (_, params) => LoginPage()));
     router.define(passwordChangePage,
-        handler:Handler(handlerFunc: (_, params) => PasswordPage()));
+        handler: Handler(handlerFunc: (_, params) => PasswordPage()));
 
     router.define(registerPage,
         handler: Handler(handlerFunc: (_, params) => RegisterPage()));
