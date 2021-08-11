@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class SlideTransitionX extends AnimatedWidget {
   SlideTransitionX({
     Key key,
-    @required Animation<double> position,
+    Animation<double> position,
     this.transformHitTests = true,
     this.direction = AxisDirection.down,
     this.child,

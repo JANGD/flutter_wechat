@@ -8,8 +8,7 @@ import 'package:flutter_wechat/components/list_tile/mh_list_tile.dart';
 
 class AboutUsMiddle extends StatelessWidget {
   /// 构造函数
-  const AboutUsMiddle({required Key key, required this.onTap})
-      : super(key: key);
+  const AboutUsMiddle({Key key, this.onTap}) : super(key: key);
 
   /// 回调事见
   final void Function(String title) onTap;

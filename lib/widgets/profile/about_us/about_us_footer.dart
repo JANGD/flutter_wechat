@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wechat/constant/style.dart';
 
 class AboutUsFooter extends StatefulWidget {
-  AboutUsFooter({Key? key, required this.height}) : super(key: key);
+  AboutUsFooter({Key key, this.height}) : super(key: key);
 
   /// 控件高度
   final double height;
